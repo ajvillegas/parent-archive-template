@@ -11,7 +11,7 @@ Display a child page archive on the parent page when using the Genesis Framework
 
 # Description
 
-This plugin allows you to displays an archive of child pages on the parent page when when selecting the 'Parent Archive' page template. **Requires the Genesis Framework**.
+This plugin allows you to display an archive of child pages on the parent page when selecting the 'Parent Archive' page template. **Requires the Genesis Framework**.
 
 You can control how your archive displays on your website by changing the settings on the 'Parent Archive Settings' meta box.
 
