@@ -13,8 +13,8 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
+ * Defines the plugin name, version, enqueues the admin-specific
+ * stylesheet and JavaScript and adds the meta box.
  *
  * @package    Parent_Archive_Template
  * @subpackage Parent_Archive_Template/admin
