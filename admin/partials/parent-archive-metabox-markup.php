@@ -24,8 +24,9 @@
 				<select name="_pat_meta_content_archive" id="_pat_meta_content_archive">
 				<?php
 				$archive_display = array(
-					'full'     => __( 'Entry content', 'parent-archive-template' ),
-					'excerpts' => __( 'Entry excerpts', 'parent-archive-template' ),
+					'full'     => __( 'Page content', 'parent-archive-template' ),
+					'excerpts' => __( 'Page excerpts', 'parent-archive-template' ),
+					'none'     => __( 'No content', 'parent-archive-template' ),
 				);
 				foreach ( (array) $archive_display as $value => $name ) { ?>
 					<option value="<?php echo esc_attr( $value ); ?>" <?php if ( isset ( $stored_meta['_pat_meta_content_archive'] ) ) echo selected( $stored_meta['_pat_meta_content_archive'][0], esc_attr( $value ), false ); ?>><?php echo esc_html( $name ); ?></option><?php "\n";
@@ -50,7 +51,7 @@
 				<label for="_pat_meta_content_layout"><?php esc_html_e( 'Layout', 'parent-archive-template' ); ?></label>
 			</th>
 			<td>
-				<?php esc_html_e( 'Display child pages in', 'parent-archive-template' ); ?>
+				<?php esc_html_e( 'Display subpages in', 'parent-archive-template' ); ?>
 				<select name="_pat_meta_content_layout" id="_pat_meta_content_layout">
 				<?php
 				$archive_layout = array(
@@ -77,7 +78,7 @@
 				<p>
 					<label for="_pat_meta_content_archive_thumbnail">
 						<input type="checkbox" name="_pat_meta_content_archive_thumbnail" id="_pat_meta_content_archive_thumbnail" value="1" <?php if ( isset ( $stored_meta['_pat_meta_content_archive_thumbnail'] ) ) checked( $stored_meta['_pat_meta_content_archive_thumbnail'][0], 1 ); ?> />
-						<?php esc_html_e( 'Include the Featured Image?', 'parent-archive-template' ); ?>
+						<?php esc_html_e( 'Include the featured image?', 'parent-archive-template' ); ?>
 					</label>
 				</p>
 	
@@ -126,12 +127,12 @@
 		
 		<tr valign="top">
 			<th scope="row">
-				<label for="_pat_meta_posts_limit"><?php esc_html_e( 'Posts Per Page', 'parent-archive-template' ); ?></label>
+				<label for="_pat_meta_posts_limit"><?php esc_html_e( 'Subpages Per Page', 'parent-archive-template' ); ?></label>
 			</th>
 			<td>
 				<input type="number" name="_pat_meta_posts_limit" id="_pat_meta_posts_limit" class="small-text" value="<?php if ( isset ( $stored_meta['_pat_meta_posts_limit'] ) ) echo absint( $stored_meta['_pat_meta_posts_limit'][0] ); else echo 0; ?>" />
 				<p>
-					<span class="description"><?php esc_html_e( 'Limit number of child pages to display per page. Enter 0 for unlimited.', 'parent-archive-template' ); ?></span>
+					<span class="description"><?php esc_html_e( 'Limit number of subpages to display per page. Enter 0 for unlimited.', 'parent-archive-template' ); ?></span>
 				</p>
 			</td>
 		</tr>
