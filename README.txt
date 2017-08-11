@@ -43,7 +43,7 @@ For more information about creating child pages, please refer to this page: [Cre
 
 = 1.0.1 =
 * Added option for displaying entry without content.
-* Fixed bug where page template was breaking search results and prevented from displaying correctly.
+* Fixed bug where page template was breaking search results and prevented them from displaying correctly.
 
 = 1.0.0 =
 * Initial release.
