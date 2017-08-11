@@ -84,7 +84,7 @@ class Parent_Archive_Template_Admin {
 	}
 	
 	/**
-	 * Enable post excerpts on pages.
+	 * Enable manual post excerpts on pages.
 	 *
 	 * @since    1.0.0
 	 */
