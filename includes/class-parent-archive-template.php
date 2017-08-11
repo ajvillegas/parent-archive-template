@@ -69,7 +69,7 @@ class Parent_Archive_Template {
 	public function __construct() {
 
 		$this->plugin_name = 'parent-archive-template';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_page_templater_hooks();
