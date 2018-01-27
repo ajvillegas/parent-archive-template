@@ -67,7 +67,7 @@ if ( ! class_exists( 'Genesis_Admin_Boxes' ) ) {
 			
 			// Define column classes
 			$i = 0;
-			$columns = $layout;
+			$columns = ! empty( $layout ) ? $layout : 1;
 			$column_classes = array( '', '', 'one-half', 'one-third', 'one-fourth', 'one-fifth', 'one-sixth' );
 			$class = $column_classes[$columns];
 			
