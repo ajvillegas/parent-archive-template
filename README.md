@@ -5,8 +5,8 @@ Display a child page archive on the parent page when using the Genesis Framework
 **Contributors**: [ajvillegas](http://profiles.wordpress.org/ajvillegas)  
 **Tags**: [admin](http://wordpress.org/plugins/tags/admin), [page-template](http://wordpress.org/plugins/tags/page-template), [genesis](http://wordpress.org/plugins/tags/genesis)  
 **Requires at least**: 4.5  
-**Tested up to**: 4.8  
-**Stable tag**: 1.0.1  
+**Tested up to**: 4.9  
+**Stable tag**: 1.0.2  
 **License**: [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
 # Description
@@ -41,6 +41,9 @@ For more information about creating child pages, please refer to this page: [Cre
 ![Parent Archive Settings](wp-assets/screenshot-1.png?raw=true)
 
 # Changelog
+
+**1.0.2**
+* Updated the Parent Archive page template to enable full compatibility with Genesis functions.
 
 **1.0.1**
 * Added option for displaying entry without content.
