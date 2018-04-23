@@ -39,6 +39,7 @@ if ( ! class_exists( 'Genesis_Admin_Boxes' ) ) {
 	function pat_plugin_add_body_class( $classes ) {
 		
 		$classes[] = 'parent-archive';
+		
 		return $classes;
 		
 	}
@@ -214,33 +215,12 @@ if ( ! class_exists( 'Genesis_Admin_Boxes' ) ) {
 			
 		}
 		
-	}
-	
-	/**
-	 * Add archive title to search results.
-	 *
-	 * @since	 1.0.1
-	 */
-	if ( is_search() ) {
+		genesis();
 		
-		add_action( 'genesis_before_loop', 'pat_plugin_do_search_title' );
+	} elseif ( is_search() ) {
+			
+		require_once( get_template_directory() . '/search.php' );
 		
 	}
-	
-	
-	/**
-	 * Echo the title with the search term.
-	 *
-	 * @since	 1.0.1
-	 */
-	function pat_plugin_do_search_title() {
-	
-		$title = sprintf( '<div class="archive-description"><h1 class="archive-title">%s %s</h1></div>', apply_filters( 'genesis_search_title_text', __( 'Search Results for:', 'genesis' ) ), get_search_query() );
-	
-		echo apply_filters( 'genesis_search_title_output', $title ) . "\n";
-	
-	}
-		
-	genesis();
 
 }
