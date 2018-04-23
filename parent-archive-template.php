@@ -14,9 +14,9 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Parent Archive Template
- * Plugin URI:        http://www.alexisvillegas.com/plugins/parent-archive-template
+ * Plugin URI:        https://github.com/ajvillegas/parent-archive-template
  * Description:       Display a child page archive on the parent page when when selecting the Parent Archive template.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Alexis J. Villegas
  * Author URI:        http://www.alexisvillegas.com
  * License:           GPL-2.0+
