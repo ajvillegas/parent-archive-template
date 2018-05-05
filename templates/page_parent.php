@@ -111,7 +111,7 @@ if ( ! class_exists( 'Genesis_Admin_Boxes' ) ) {
 							
 							if ( 1 == $thumbnail && has_post_thumbnail() && 'above' === $img_position ) { ?>
 								<a class="entry-image-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-									<?php the_post_thumbnail( $img_size, array( 'class' => $img_alignment ) ); ?>
+									<?php the_post_thumbnail( esc_attr( $img_size ), array( 'class' => esc_attr( $img_alignment ) ) ); ?>
 								</a> <?php
 							}
 							
